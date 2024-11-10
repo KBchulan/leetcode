@@ -17,6 +17,7 @@ public:
         {
             return intervals;
         }
+        
         vector<vector<int>> ans;
         int i;
         for (i = 1; i < n; i++)
@@ -31,7 +32,6 @@ public:
                 r = intervals[i][1];
         }
         ans.push_back({l, r});
-        ;
         return ans;
     }
 };
